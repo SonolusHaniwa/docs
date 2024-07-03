@@ -5,6 +5,8 @@ import Prism from 'prismjs'
 import prismjsPlugin from '@vuepress/plugin-prismjs'
 
 export default defineUserConfig({
+    dest: `../dist`,
+
     bundler: viteBundler(),
     theme: defaultTheme({
         navbar: [
