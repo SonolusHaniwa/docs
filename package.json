@@ -4,10 +4,11 @@
     "build": "vuepress build docs"
   },
   "devDependencies": {
+    "vue": "^3.4.31",
     "@vuepress/bundler-vite": "^2.0.0-rc.14",
     "@vuepress/plugin-prismjs": "^2.0.0-rc.37",
     "@vuepress/theme-default": "^2.0.0-rc.37",
-    "vuepress": "^2.0.0-rc.14",
-    "prismjs": "^1.29.0"
+    "prismjs": "^1.29.0",
+    "vuepress": "^2.0.0-rc.14"
   }
 }
