@@ -54,6 +54,15 @@ export default defineUserConfig({
                             { text: '3. 基本数据类型及扩展', link: '/sonolus.h/basic/3.%20data.md' },
                             { text: '4. 函数与重要宏定义', link: '/sonolus.h/basic/4.%20function.md' }
                         ]
+                    },  {
+                        text: '游玩模式',
+                        prefix: '/sonolus.h/play/',
+                        children: [
+                            { text: '1. 原型和实体', link: '/sonolus.h/play/1.%20archetypes.md' },
+                            { text: '2. 初始化', link: '/sonolus.h/play/2.%20initialization.md' },
+                            { text: '3. 屏幕坐标系', link: '/sonolus.h/play/3.%20coordinate.md'},
+                            { text: '4. 区块与共享不可变数据', link: '/sonolus.h/play/4.%20blocks.md'}
+                        ]
                     }
                 ]
             }
@@ -97,6 +106,15 @@ export default defineUserConfig({
                         { text: '2. 配置项目信息', link: '/sonolus.h/basic/2.%20config.md' },
                         { text: '3. 基本数据类型及扩展', link: '/sonolus.h/basic/3.%20data.md' },
                         { text: '4. 函数与重要宏定义', link: '/sonolus.h/basic/4.%20function.md' }
+                    ]
+                }, {
+                    text: '游玩模式',
+                    collapsible: false,
+                    children: [
+                        { text: '1. 原型和实体', link: '/sonolus.h/play/1.%20archetypes.md' },
+                        { text: '2. 初始化', link: '/sonolus.h/play/2.%20initialization.md' },
+                        { text: '3. 屏幕坐标系', link: '/sonolus.h/play/3.%20coordinate.md'},
+                        { text: '4. 区块与共享不可变数据', link: '/sonolus.h/play/4.%20blocks.md'}
                     ]
                 }
             ]
