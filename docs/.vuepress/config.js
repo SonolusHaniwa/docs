@@ -68,7 +68,11 @@ export default defineUserConfig({
                             { text: '8. 按键生成', link: '/sonolus.h/play/8.%20spawn.md' },
                             { text: '9. 按键绘制', link: '/sonolus.h/play/9.%20draw.md' },
                             { text: '10. 按键输入', link: '/sonolus.h/play/10.%20input.md' },
-                            { text: '11. 输入管理器', link: '/sonolus.h/play/11.%20inputManager.md' }
+                            { text: '11. 输入管理器', link: '/sonolus.h/play/11.%20inputManager.md' },
+                            { text: '12. 测试关卡', link: '/sonolus.h/play/12.%20level.md' },
+                            { text: '13. 输入判定', link: '/sonolus.h/play/13.%20judgment.md' },
+                            { text: '14. 输入桶', link: '/sonolus.h/play/14.%20bucket.md' },
+                            { text: '15. 经典得分', link: '/sonolus.h/play/15.%20arcade.md' }
                         ]
                     }
                 ]
@@ -128,7 +132,11 @@ export default defineUserConfig({
                         { text: '8. 按键生成', link: '/sonolus.h/play/8.%20spawn.md' },
                         { text: '9. 按键绘制', link: '/sonolus.h/play/9.%20draw.md' },
                         { text: '10. 按键输入', link: '/sonolus.h/play/10.%20input.md' },
-                        { text: '11. 输入管理器', link: '/sonolus.h/play/11.%20inputManager.md' }
+                        { text: '11. 输入管理器', link: '/sonolus.h/play/11.%20inputManager.md' },
+                        { text: '12. 测试关卡', link: '/sonolus.h/play/12.%20level.md' },
+                        { text: '13. 输入判定', link: '/sonolus.h/play/13.%20judgment.md' },
+                        { text: '14. 输入桶', link: '/sonolus.h/play/14.%20bucket.md' },
+                        { text: '15. 经典得分', link: '/sonolus.h/play/15.%20arcade.md' }
                     ]
                 }
             ]
