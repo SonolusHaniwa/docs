@@ -8,6 +8,17 @@ export default defineUserConfig({
     bundler: viteBundler(),
     theme: defaultTheme({
         navbar: [
+            {
+                text: 'Service',
+                prefix: '/service/',
+                children: [
+                    { text: '1. 概述', link: '/service/1.%overview.md' },
+                    { text: '2. ハニプレ', link: '/service/2.%20hanipure.md' },
+                    { text: '3. ユメステ', link: '/service/3.%20yumesute.md' },
+                    { text: '4. Stellarity', link: '/service/4.%20stellarity.md' },
+                    { text: '5. Phigros', link: '/service/5.%20phigros.md' },
+                ]
+            },
             { 
                 text: 'Server', 
                 prefix: '/sonolus-server/',
@@ -15,7 +26,7 @@ export default defineUserConfig({
                     {
                         text: "首页",
                         children: [
-                            { text: '1. 总览', link: '/sonolus-server/1.%20intro.md' }
+                            { text: '1. 概述', link: '/sonolus-server/1.%20intro.md' }
                         ]
                     }, {
                         text: '玩家',
@@ -42,7 +53,7 @@ export default defineUserConfig({
                 ]
             },
             {
-                text: "Library > Basic",
+                text: "Library - Basic",
                 prefix: '/sonolus.h/basic/',
                 children: [
                     { text: '1. 搭建开发环境', link: '/sonolus.h/basic/1.%20install.md' },
@@ -51,7 +62,7 @@ export default defineUserConfig({
                     { text: '4. 函数与重要宏定义', link: '/sonolus.h/basic/4.%20function.md' }
                 ]
             },  {
-                text: 'Library > Play',
+                text: 'Library - Play',
                 prefix: '/sonolus.h/play/',
                 children: [
                     { text: '1. 原型和实体', link: '/sonolus.h/play/1.%20archetypes.md' },
@@ -77,10 +88,22 @@ export default defineUserConfig({
                     { text: '21. 选项', link: '/sonolus.h/play/21.%20options.md' }
                 ]
             }, {
-                text: 'Library > Tutorial',
+                text: 'Library - Tutorial',
                 prefix: '/sonolus.h/tutorial/',
                 children: [
                     { text: '1. 概述', link: '/sonolus.h/tutorial/1.%20overview.md' }
+                ]
+            }, {
+                text: 'Library - Preview',
+                prefix: '/sonolus.h/preview/',
+                children: [
+                    { text: '1. 概述', link: '/sonolus.h/preview/1.%20overview.md' }
+                ]
+            }, {
+                text: 'Library - Watch',
+                prefix: '/sonolus.h/watch/',
+                children: [
+
                 ]
             }
         ],
@@ -155,6 +178,18 @@ export default defineUserConfig({
                     collapsible: false,
                     children: [
                         { text: '1. 概述', link: '/sonolus.h/tutorial/1.%20overview.md' }
+                    ]
+                }, {
+                    text: '预览模式',
+                    collapsible: false,
+                    children: [
+                        { text: '1. 概述', link: '/sonolus.h/preview/1.%20overview.md' }
+                    ]
+                }, {
+                    text: '观看模式',
+                    collapsible: false,
+                    children: [
+
                     ]
                 }
             ]
