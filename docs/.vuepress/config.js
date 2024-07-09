@@ -97,7 +97,8 @@ export default defineUserConfig({
                 text: 'Library - Preview',
                 prefix: '/sonolus.h/preview/',
                 children: [
-                    { text: '1. 概述', link: '/sonolus.h/preview/1.%20overview.md' }
+                    { text: '1. 概述', link: '/sonolus.h/preview/1.%20overview.md' },
+                    { text: '2. 屏幕', link: '/sonolus.h/preview/2.%20screen.md' }
                 ]
             }, {
                 text: 'Library - Watch',
