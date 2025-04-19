@@ -55,65 +55,67 @@ export default defineUserConfig({
                 prefix: '/sonolus.h/basic/',
                 children: [
                     { text: '1. 搭建开发环境', link: '/sonolus.h/basic/1.%20install.md' },
-                    { text: '2. 配置项目信息', link: '/sonolus.h/basic/2.%20config.md' },
-                    { text: '3. 基本数据类型', link: '/sonolus.h/basic/3.%20data.md' },
-                    { text: '4. 函数与语句块', link: '/sonolus.h/basic/4.%20function.md' },
-                    { text: '5. 注意事项', link: '/sonolus.h/basic/5.%20attention.md' }
+                    { text: '2. Sonolus 基础', link: '/sonolus.h/basic/2.%20sonolus.md' },
+                    { text: '3. 配置项目信息', link: '/sonolus.h/basic/3.%20config.md' },
+                    { text: '4. 基本数据类型', link: '/sonolus.h/basic/4.%20data.md' },
+                    { text: '5. 函数与语句块', link: '/sonolus.h/basic/5.%20function.md' },
+                    { text: '6. 注意事项', link: '/sonolus.h/basic/6.%20attention.md' }
                 ]
-            }, {
-                text: 'Library - Play',
-                prefix: '/sonolus.h/play/',
-                children: [
-                    { text: '1. 原型和实体', link: '/sonolus.h/play/1.%20archetypes.md' },
-                    { text: '2. 初始化', link: '/sonolus.h/play/2.%20initialization.md' },
-                    { text: '3. 屏幕坐标系', link: '/sonolus.h/play/3.%20coordinate.md'},
-                    { text: '4. 区块与共享不可变数据', link: '/sonolus.h/play/4.%20blocks.md'},
-                    { text: '5. 舞台', link: '/sonolus.h/play/5.%20stage.md' },
-                    { text: '6. 音符和实体数据', link: '/sonolus.h/play/6.%20note.md' },
-                    { text: '7. BPM 与节拍', link: '/sonolus.h/play/7.%20bpm.md' },
-                    { text: '8. 音符生成', link: '/sonolus.h/play/8.%20spawn.md' },
-                    { text: '9. 音符绘制', link: '/sonolus.h/play/9.%20draw.md' },
-                    { text: '10. 音符输入', link: '/sonolus.h/play/10.%20input.md' },
-                    { text: '11. 输入管理器', link: '/sonolus.h/play/11.%20inputManager.md' },
-                    { text: '12. 测试关卡', link: '/sonolus.h/play/12.%20level.md' },
-                    { text: '13. 输入判定', link: '/sonolus.h/play/13.%20judgment.md' },
-                    { text: '14. 输入桶', link: '/sonolus.h/play/14.%20bucket.md' },
-                    { text: '15. 经典得分', link: '/sonolus.h/play/15.%20arcade.md' },
-                    { text: '16. 生命值', link: '/sonolus.h/play/16.%20life.md' },
-                    { text: '17. 音效', link: '/sonolus.h/play/17.%20sfx.md' },
-                    { text: '18. 粒子效果', link: '/sonolus.h/play/18.%20particle.md' },
-                    { text: '19. 倍速', link: '/sonolus.h/play/19.%20timeScale.md' },
-                    { text: '20. 独立下落速度', link: '/sonolus.h/play/20.%20speed.md' },
-                    { text: '21. 选项', link: '/sonolus.h/play/21.%20options.md' }
-                ]
-            }, {
-                text: 'Library - Tutorial',
-                prefix: '/sonolus.h/tutorial/',
-                children: [
-                    { text: '1. 概述', link: '/sonolus.h/tutorial/1.%20overview.md' }
-                ]
-            }, {
-                text: 'Library - Preview',
-                prefix: '/sonolus.h/preview/',
-                children: [
-                    { text: '1. 概述', link: '/sonolus.h/preview/1.%20overview.md' },
-                    { text: '2. 屏幕', link: '/sonolus.h/preview/2.%20screen.md' },
-                    { text: '3. 舞台', link: '/sonolus.h/preview/3.%20stage.md' },
-                    { text: '4. 音符与面板数量', link: '/sonolus.h/preview/4.%20note.md' },
-                    { text: '5. 音符绘制', link: '/sonolus.h/preview/5.%20draw.md' },
-                    { text: '6. 打印时间', link: '/sonolus.h/preview/6.%20print.md' },
-                    { text: '7. 绘制刻度', link: '/sonolus.h/preview/7.%20measure.md' },
-                    { text: '8. 节拍刻度线', link: '/sonolus.h/preview/8.%20line.md' },
-                    { text: '9. BPM', link: '/sonolus.h/preview/9.%20bpm.md' },
-                    { text: '10. 倍速', link: '/sonolus.h/preview/10.%20timeScale.md' }
-                ]
-            }, {
-                text: 'Library - Watch',
-                prefix: '/sonolus.h/watch/',
-                children: [
+            },
+            // {
+            //     text: 'Library - Play',
+            //     prefix: '/sonolus.h/play/',
+            //     children: [
+            //         { text: '1. 原型和实体', link: '/sonolus.h/play/1.%20archetypes.md' },
+            //         { text: '2. 初始化', link: '/sonolus.h/play/2.%20initialization.md' },
+            //         { text: '3. 屏幕坐标系', link: '/sonolus.h/play/3.%20coordinate.md'},
+            //         { text: '4. 区块与共享不可变数据', link: '/sonolus.h/play/4.%20blocks.md'},
+            //         { text: '5. 舞台', link: '/sonolus.h/play/5.%20stage.md' },
+            //         { text: '6. 音符和实体数据', link: '/sonolus.h/play/6.%20note.md' },
+            //         { text: '7. BPM 与节拍', link: '/sonolus.h/play/7.%20bpm.md' },
+            //         { text: '8. 音符生成', link: '/sonolus.h/play/8.%20spawn.md' },
+            //         { text: '9. 音符绘制', link: '/sonolus.h/play/9.%20draw.md' },
+            //         { text: '10. 音符输入', link: '/sonolus.h/play/10.%20input.md' },
+            //         { text: '11. 输入管理器', link: '/sonolus.h/play/11.%20inputManager.md' },
+            //         { text: '12. 测试关卡', link: '/sonolus.h/play/12.%20level.md' },
+            //         { text: '13. 输入判定', link: '/sonolus.h/play/13.%20judgment.md' },
+            //         { text: '14. 输入桶', link: '/sonolus.h/play/14.%20bucket.md' },
+            //         { text: '15. 经典得分', link: '/sonolus.h/play/15.%20arcade.md' },
+            //         { text: '16. 生命值', link: '/sonolus.h/play/16.%20life.md' },
+            //         { text: '17. 音效', link: '/sonolus.h/play/17.%20sfx.md' },
+            //         { text: '18. 粒子效果', link: '/sonolus.h/play/18.%20particle.md' },
+            //         { text: '19. 倍速', link: '/sonolus.h/play/19.%20timeScale.md' },
+            //         { text: '20. 独立下落速度', link: '/sonolus.h/play/20.%20speed.md' },
+            //         { text: '21. 选项', link: '/sonolus.h/play/21.%20options.md' }
+            //     ]
+            // }, {
+            //     text: 'Library - Tutorial',
+            //     prefix: '/sonolus.h/tutorial/',
+            //     children: [
+            //         { text: '1. 概述', link: '/sonolus.h/tutorial/1.%20overview.md' }
+            //     ]
+            // }, {
+            //     text: 'Library - Preview',
+            //     prefix: '/sonolus.h/preview/',
+            //     children: [
+            //         { text: '1. 概述', link: '/sonolus.h/preview/1.%20overview.md' },
+            //         { text: '2. 屏幕', link: '/sonolus.h/preview/2.%20screen.md' },
+            //         { text: '3. 舞台', link: '/sonolus.h/preview/3.%20stage.md' },
+            //         { text: '4. 音符与面板数量', link: '/sonolus.h/preview/4.%20note.md' },
+            //         { text: '5. 音符绘制', link: '/sonolus.h/preview/5.%20draw.md' },
+            //         { text: '6. 打印时间', link: '/sonolus.h/preview/6.%20print.md' },
+            //         { text: '7. 绘制刻度', link: '/sonolus.h/preview/7.%20measure.md' },
+            //         { text: '8. 节拍刻度线', link: '/sonolus.h/preview/8.%20line.md' },
+            //         { text: '9. BPM', link: '/sonolus.h/preview/9.%20bpm.md' },
+            //         { text: '10. 倍速', link: '/sonolus.h/preview/10.%20timeScale.md' }
+            //     ]
+            // }, {
+            //     text: 'Library - Watch',
+            //     prefix: '/sonolus.h/watch/',
+            //     children: [
 
-                ]
-            }
+            //     ]
+            // }
         ],
         sidebar: {
             '/sonolus-server/': [
@@ -151,65 +153,67 @@ export default defineUserConfig({
                     collapsable: false,
                     children: [
                         { text: '1. 搭建开发环境', link: '/sonolus.h/basic/1.%20install.md' },
-                        { text: '2. 配置项目信息', link: '/sonolus.h/basic/2.%20config.md' },
-                        { text: '3. 基本数据类型及扩展', link: '/sonolus.h/basic/3.%20data.md' },
-                        { text: '4. 函数与重要宏定义', link: '/sonolus.h/basic/4.%20function.md' },
-                        { text: '5. 注意事项', link: '/sonolus.h/basic/5.%20attention.md' }
+                        { text: '2. Sonolus 基础', link: '/sonolus.h/basic/2.%20sonolus.md' },
+                        { text: '3. 配置项目信息', link: '/sonolus.h/basic/3.%20config.md' },
+                        { text: '4. 基本数据类型', link: '/sonolus.h/basic/4.%20data.md' },
+                        { text: '5. 函数与语句块', link: '/sonolus.h/basic/5.%20function.md' },
+                        { text: '6. 注意事项', link: '/sonolus.h/basic/6.%20attention.md' }
                     ]
-                }, {
-                    text: '游玩模式',
-                    collapsible: false,
-                    children: [
-                        { text: '1. 原型和实体', link: '/sonolus.h/play/1.%20archetypes.md' },
-                        { text: '2. 初始化', link: '/sonolus.h/play/2.%20initialization.md' },
-                        { text: '3. 屏幕坐标系', link: '/sonolus.h/play/3.%20coordinate.md'},
-                        { text: '4. 区块与共享不可变数据', link: '/sonolus.h/play/4.%20blocks.md'},
-                        { text: '5. 舞台', link: '/sonolus.h/play/5.%20stage.md' },
-                        { text: '6. 音符和实体数据', link: '/sonolus.h/play/6.%20note.md' },
-                        { text: '7. BPM 与节拍', link: '/sonolus.h/play/7.%20bpm.md' },
-                        { text: '8. 音符生成', link: '/sonolus.h/play/8.%20spawn.md' },
-                        { text: '9. 音符绘制', link: '/sonolus.h/play/9.%20draw.md' },
-                        { text: '10. 音符输入', link: '/sonolus.h/play/10.%20input.md' },
-                        { text: '11. 输入管理器', link: '/sonolus.h/play/11.%20inputManager.md' },
-                        { text: '12. 测试关卡', link: '/sonolus.h/play/12.%20level.md' },
-                        { text: '13. 输入判定', link: '/sonolus.h/play/13.%20judgment.md' },
-                        { text: '14. 输入桶', link: '/sonolus.h/play/14.%20bucket.md' },
-                        { text: '15. 经典得分', link: '/sonolus.h/play/15.%20arcade.md' },
-                        { text: '16. 生命值', link: '/sonolus.h/play/16.%20life.md' },
-                        { text: '17. 音效', link: '/sonolus.h/play/17.%20sfx.md' },
-                        { text: '18. 粒子效果', link: '/sonolus.h/play/18.%20particle.md' },
-                        { text: '19. 倍速', link: '/sonolus.h/play/19.%20timeScale.md' },
-                        { text: '20. 独立下落速度', link: '/sonolus.h/play/20.%20speed.md' },
-                        { text: '21. 选项', link: '/sonolus.h/play/21.%20options.md' }
-                    ]
-                }, {
-                    text: '教程模式',
-                    collapsible: false,
-                    children: [
-                        { text: '1. 概述', link: '/sonolus.h/tutorial/1.%20overview.md' }
-                    ]
-                }, {
-                    text: '预览模式',
-                    collapsible: false,
-                    children: [
-                        { text: '1. 概述', link: '/sonolus.h/preview/1.%20overview.md' },
-                        { text: '2. 屏幕', link: '/sonolus.h/preview/2.%20screen.md' },
-                        { text: '3. 舞台', link: '/sonolus.h/preview/3.%20stage.md' },
-                        { text: '4. 音符与面板数量', link: '/sonolus.h/preview/4.%20note.md' },
-                        { text: '5. 音符绘制', link: '/sonolus.h/preview/5.%20draw.md' },
-                        { text: '6. 打印时间', link: '/sonolus.h/preview/6.%20print.md' },
-                        { text: '7. 绘制刻度', link: '/sonolus.h/preview/7.%20measure.md' },
-                        { text: '8. 节拍刻度线', link: '/sonolus.h/preview/8.%20line.md' },
-                        { text: '9. BPM', link: '/sonolus.h/preview/9.%20bpm.md' },
-                        { text: '10. 倍速', link: '/sonolus.h/preview/10.%20timeScale.md' }
-                    ]
-                }, {
-                    text: '观看模式',
-                    collapsible: false,
-                    children: [
+                }, 
+                // {
+                //     text: '游玩模式',
+                //     collapsible: false,
+                //     children: [
+                //         { text: '1. 原型和实体', link: '/sonolus.h/play/1.%20archetypes.md' },
+                //         { text: '2. 初始化', link: '/sonolus.h/play/2.%20initialization.md' },
+                //         { text: '3. 屏幕坐标系', link: '/sonolus.h/play/3.%20coordinate.md'},
+                //         { text: '4. 区块与共享不可变数据', link: '/sonolus.h/play/4.%20blocks.md'},
+                //         { text: '5. 舞台', link: '/sonolus.h/play/5.%20stage.md' },
+                //         { text: '6. 音符和实体数据', link: '/sonolus.h/play/6.%20note.md' },
+                //         { text: '7. BPM 与节拍', link: '/sonolus.h/play/7.%20bpm.md' },
+                //         { text: '8. 音符生成', link: '/sonolus.h/play/8.%20spawn.md' },
+                //         { text: '9. 音符绘制', link: '/sonolus.h/play/9.%20draw.md' },
+                //         { text: '10. 音符输入', link: '/sonolus.h/play/10.%20input.md' },
+                //         { text: '11. 输入管理器', link: '/sonolus.h/play/11.%20inputManager.md' },
+                //         { text: '12. 测试关卡', link: '/sonolus.h/play/12.%20level.md' },
+                //         { text: '13. 输入判定', link: '/sonolus.h/play/13.%20judgment.md' },
+                //         { text: '14. 输入桶', link: '/sonolus.h/play/14.%20bucket.md' },
+                //         { text: '15. 经典得分', link: '/sonolus.h/play/15.%20arcade.md' },
+                //         { text: '16. 生命值', link: '/sonolus.h/play/16.%20life.md' },
+                //         { text: '17. 音效', link: '/sonolus.h/play/17.%20sfx.md' },
+                //         { text: '18. 粒子效果', link: '/sonolus.h/play/18.%20particle.md' },
+                //         { text: '19. 倍速', link: '/sonolus.h/play/19.%20timeScale.md' },
+                //         { text: '20. 独立下落速度', link: '/sonolus.h/play/20.%20speed.md' },
+                //         { text: '21. 选项', link: '/sonolus.h/play/21.%20options.md' }
+                //     ]
+                // }, {
+                //     text: '教程模式',
+                //     collapsible: false,
+                //     children: [
+                //         { text: '1. 概述', link: '/sonolus.h/tutorial/1.%20overview.md' }
+                //     ]
+                // }, {
+                //     text: '预览模式',
+                //     collapsible: false,
+                //     children: [
+                //         { text: '1. 概述', link: '/sonolus.h/preview/1.%20overview.md' },
+                //         { text: '2. 屏幕', link: '/sonolus.h/preview/2.%20screen.md' },
+                //         { text: '3. 舞台', link: '/sonolus.h/preview/3.%20stage.md' },
+                //         { text: '4. 音符与面板数量', link: '/sonolus.h/preview/4.%20note.md' },
+                //         { text: '5. 音符绘制', link: '/sonolus.h/preview/5.%20draw.md' },
+                //         { text: '6. 打印时间', link: '/sonolus.h/preview/6.%20print.md' },
+                //         { text: '7. 绘制刻度', link: '/sonolus.h/preview/7.%20measure.md' },
+                //         { text: '8. 节拍刻度线', link: '/sonolus.h/preview/8.%20line.md' },
+                //         { text: '9. BPM', link: '/sonolus.h/preview/9.%20bpm.md' },
+                //         { text: '10. 倍速', link: '/sonolus.h/preview/10.%20timeScale.md' }
+                //     ]
+                // }, {
+                //     text: '观看模式',
+                //     collapsible: false,
+                //     children: [
 
-                    ]
-                }
+                //     ]
+                // }
             ]
         }
     }),
