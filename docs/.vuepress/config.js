@@ -56,8 +56,9 @@ export default defineUserConfig({
                 children: [
                     { text: '1. 搭建开发环境', link: '/sonolus.h/basic/1.%20install.md' },
                     { text: '2. 配置项目信息', link: '/sonolus.h/basic/2.%20config.md' },
-                    { text: '3. 基本数据类型及扩展', link: '/sonolus.h/basic/3.%20data.md' },
-                    { text: '4. 函数与重要宏定义', link: '/sonolus.h/basic/4.%20function.md' }
+                    { text: '3. 基本数据类型', link: '/sonolus.h/basic/3.%20data.md' },
+                    { text: '4. 函数与语句块', link: '/sonolus.h/basic/4.%20function.md' },
+                    { text: '5. 注意事项', link: '/sonolus.h/basic/5.%20attention.md' }
                 ]
             }, {
                 text: 'Library - Play',
