@@ -102,6 +102,12 @@ You just need to call `defineParticleEffect` function once for each particle eff
 
 Standard particle effect names were declared in `ParticleEffectName` class. You can find all standard particle effect names in <https://github.com/Sonolus/sonolus-core/blob/main/src/common/core/particle/particle-effect-name.ts#L1> or <https://github.com/SonolusHaniwa/sonolus.h/blob/main/sonolus/resource/Particles.h#L29>.
 
+:::warning
+
+When you try to assign a value of type `ParticleEffect` to `var`, you may encounter a compilation error `ambiguous overload for ‘operator=’ (operand types are ‘Variable’ and ‘ParticleEffect’)`. You can try to use function-style explicit type conversion to change `ParticleEffect` into `int` to solve this issue.
+
+:::
+
 ## Buckets
 
 Buckets are declared by `defineBucket` function:
@@ -128,10 +134,10 @@ class EngineDataBucketSprite(int id, int fallbackId, double x, double y, double 
 Bucket defineBucket(vector<EngineDataBucketSprite> sprites, string unit);
 
 Bucket NormalNoteBucket = defineBucket({
-    EngineDataBucketSprite(Sprites.NormalNote, 0, 0.0, 0.0, 2.0, 1.0, 270)
+    EngineDataBucketSprite(NormalNote, 0, 0.0, 0.0, 2.0, 1.0, 270)
 }, Text.MillisecondUnit);
 Bucket CriticalNoteBucket = defineBucket({
-	EngineDataBucketSprite(Sprites.CriticalNote, 0, 0.0, 0.0, 2.0, 1.0, 270)
+	EngineDataBucketSprite(CriticalNote, 0, 0.0, 0.0, 2.0, 1.0, 270)
 });
 ```
 
@@ -159,7 +165,7 @@ Instruction texts are declared by `defineInstructionText` function:
  */
 InstructionText defineInstructionText(string text);
 
-InstructionText NormalNote = defineInstructionText(Text.Tap);
+InstructionText NormalNote = defineInstructionText(Texts.Tap);
 InstructionText CriticalNote = defineInstructionText("Tap");
 ```
 
@@ -271,8 +277,8 @@ Variable SelectOption(
     vector<string> values = {}
 )
 
-var Mirror = ToggleOption(Text.Mirror, "", false, false, "", false);
-var NoteSpeed = SliderOption(Text.NoteSpeed, "", false, false, "sirius", 5.0, 1.0, 25.0, 0.1, "");
+var Mirror = ToggleOption(Texts.Mirror, "", false, false, "", false);
+var NoteSpeed = SliderOption(Texts.NoteSpeed, "", false, false, "sirius", 5.0, 1.0, 25.0, 0.1, "");
 var JudgeType = SelectOption("Show FAST/SLOW", "", false, false, "sirius", 2, {
     "PERFECT and below",
     "GREAT and below",

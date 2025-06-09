@@ -23,15 +23,15 @@ In the root directory of Sonolus Server, enter the following commands to pull So
 ./sonolus synccpp
 ```
 
-Enter the following command to create a new project:
+## Getting Started
+
+Enter the following command to create a new project in the root directory of Sonolus Server:
 
 ```bash
 ./sonolus initcpp <name>
 ```
 
-## Getting Started
 
-Coming soon!
 
 ## Documentation
 
