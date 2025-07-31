@@ -35,6 +35,6 @@ Enter the following command to create a new project in the root directory of Son
 
 ## Documentation
 
-See [Basics](./basics/index.md) for basic usage for Sonolus.h.
+See [Basics](./basics/intro.md) for basic usage for Sonolus.h.
 
 See [API](./api/index.md) for details informations for Sonolus.h API.
