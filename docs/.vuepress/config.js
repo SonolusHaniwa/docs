@@ -109,7 +109,12 @@ export default defineUserConfig({
                     }, {
                         text: 'API',
                         children: [
-
+                            { text: 'Index', link: '/sonolus.h-en/api/intro.md' },
+                            { text: 'Macros', link: '/sonolus.h-en/api/macros.md' },
+                            { text: 'Builtins', link: '/sonolus.h-en/api/builtin.md' },
+                            { text: 'Engine Options', link: '/sonolus.h-en/api/options.md' }, 
+                            { text: 'Engine UI', link: '/sonolus.h-en/api/ui.md' },
+                            { text: 'Play Mode', link: '/sonolus.h-en/api/play.md' }
                         ]
                     }
                 ]
@@ -260,7 +265,12 @@ export default defineUserConfig({
                 }, {
                     text: 'API',
                     children: [
-
+                        { text: 'Index', link: '/sonolus.h-en/api/intro.md' },
+                        { text: 'Macros', link: '/sonolus.h-en/api/macros.md' },
+                        { text: 'Builtins', link: '/sonolus.h-en/api/builtin.md' },
+                        { text: 'Engine Options', link: '/sonolus.h-en/api/options.md' }, 
+                        { text: 'Engine UI', link: '/sonolus.h-en/api/ui.md' },
+                        { text: 'Play Mode', link: '/sonolus.h-en/api/play.md' }
                     ]
                 }
             ],
