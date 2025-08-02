@@ -5,7 +5,10 @@ Details informations for Sonolus.h API.
 - [Macros](./macros.md)
 - [Builtins](./builtin.md)
 - Engine Configuration
-    - [Options](./options.md)
-    - [UI](./ui.md)
+    - [Options](./modes/options.md)
+    - [UI](./modes/ui.md)
 - Modes
-    - [Play](./play.md)
+    - [Play](./modes/play.md)
+    - [Tutorial](./modes/tutorial.md)
+    - [Preview](./modes/preview.md)
+    - [Watch](./modes/watch.md)

@@ -1,3 +1,5 @@
+# Watch Mode
+
 ## `class` `Archetype`
 
 ### `variable` `int` `id`
@@ -15,10 +17,6 @@ Generic shared memory storage accessible by other entities.
 ### `variable` `EntityInfoGroup` `info`
 
 Contains state information of the entity. This variable is read-only in all callback functions.
-
-### `variable` `EntityDespawnGroup` `despawn`
-
-Used by entities to pass despawn information back to Sonolus.
 
 ### `variable` `EntityInputGroup` `input`
 
@@ -42,13 +40,13 @@ If true, entities with this archetype are considered playable and contribute to 
 
 Determines the order of the `preprocess` callback function. Smaller values execute earlier.
 
-### `variable` `double` `spawnOrderOrder`
+### `variable` `double` `spawnTimeOrder`
 
-Determines the order of the `spawnOrder` callback function. Smaller values execute earlier.
+Determines the order of the `spawnTime` callback function. Smaller values execute earlier.
 
-### `variable` `double` `shouldSpawnOrder`
+### `variable` `double` `despawnTimeOrder`
 
-Determines the order of the `shouldSpawn` callback function. Smaller values execute earlier.
+Determines the order of the `despawnTime` callback function. Smaller values execute earlier.
 
 ### `variable` `double` `initializeOrder`
 
@@ -57,10 +55,6 @@ Determines the order of the `initialize` callback function. Smaller values execu
 ### `variable` `double` `updateSequentialOrder`
 
 Determines the order of the `updateSequential` callback function. Smaller values execute earlier.
-
-### `variable` `double` `touchOrder`
-
-Determines the order of the `touch` callback function. Smaller values execute earlier.
 
 ### `variable` `double` `updateParallelOrder`
 
@@ -80,9 +74,9 @@ Determines the order of the `terminate` callback function. Smaller values execut
 |-------------|-------------|
 | `SonolusApi` | The signature of the `SonolusApi` function |
 
-### `function` `spawnOrder`
+### `function` `spawnTime`
 
-**Description**: Callback function executed to determine the spawn order.
+**Description**: Callback function executed to determine the spawn time.
 
 **Returns**:
 
@@ -90,9 +84,9 @@ Determines the order of the `terminate` callback function. Smaller values execut
 |-------------|-------------|
 | `SonolusApi` | The signature of the `SonolusApi` function |
 
-### `function` `shouldSpawn`
+### `function` `despawnTime`
 
-**Description**: Callback function executed to determine if the entity should spawn.
+**Description**: Callback function executed to determine the despawn time.
 
 **Returns**:
 
@@ -113,16 +107,6 @@ Determines the order of the `terminate` callback function. Smaller values execut
 ### `function` `updateSequential`
 
 **Description**: Callback function executed sequentially during each update cycle.
-
-**Returns**:
-
-| Return Type | Description |
-|-------------|-------------|
-| `SonolusApi` | The signature of the `SonolusApi` function |
-
-### `function` `touch`
-
-**Description**: Callback function executed when `TouchArray` is not empty.
 
 **Returns**:
 
@@ -171,30 +155,20 @@ Determines the order of the `terminate` callback function. Smaller values execut
 | `varName`     | `string` | *required*    | The name of the variable in the code.                                                                   |
 | `jsonName`    | `string` | *required*    | The key of the imported data in the JSON object.                                                       |
 
-## `function` `defineExport`
 
-**Description**: Defines an export for the replay data. This macro adds the name of the exported data to the exports list.
+## `function` `defineUpdateSpawn`
+
+**Description**: Tell the compiler the update spawn function for the engine data.
 
 **Parameters**:
 
 | Parameter | Type     | Default Value | Description                                                                                             |
 |-----------|----------|---------------|---------------------------------------------------------------------------------------------------------|
-| `name`    | `string` | *required*    | The name of the variable in code and the exported data.                                                                          |
-
-## `function` `defineExportDetailed`
-
-**Description**: Defines a detailed export for the replay data, allowing a custom JSON key for the export. This macro adds the export to the exports list.
-
-**Parameters**:
-
-| Parameter     | Type     | Default Value | Description                                                                                             |
-|---------------|----------|---------------|---------------------------------------------------------------------------------------------------------|
-| `varName`     | `string` | *required*    | The name of the variable in the code.                                                                   |
-| `jsonName`    | `string` | *required*    | The name of the exported data in the JSON object.                                                       |
+| `func`    | `function<SonolusApi()>` | *required*    | The function to be used for update spawn.                                                             |
 
 ## `function` `BuildData`
 
-**Description**: Finalizes and writes the engine play data into a GZIP-compressed JSON file.
+**Description**: Finalizes and writes the engine watch data into a GZIP-compressed JSON file.
 
 **Parameters**:
 
